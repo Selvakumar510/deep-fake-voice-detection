@@ -1,0 +1,51 @@
+.why-section {
+  padding: 80px 48px;
+  background: #f9fafb;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.why-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  border: 1px solid #edf2f7;
+  transition: box-shadow 0.3s;
+}
+.why-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+.why-icon {
+  font-size: 36px;
+  color: #3182ce;
+  margin-bottom: 16px;
+}
+.why-card-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 12px;
+}
+.why-card-desc {
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .why-section {
+    padding: 48px 20px;
+  }
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
